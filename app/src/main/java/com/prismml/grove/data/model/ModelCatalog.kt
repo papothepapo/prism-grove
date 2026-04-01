@@ -1,0 +1,62 @@
+package com.prismml.grove.data.model
+
+import com.prismml.grove.data.db.ModelRecordEntity
+
+object ModelCatalog {
+    val presets = listOf(
+        ModelRecordEntity(
+            id = "bonsai-1.7b",
+            displayName = "Bonsai 1.7B",
+            description = "Fastest default Bonsai option for phones",
+            huggingFaceRepo = "prism-ml/Bonsai-1.7B-gguf",
+            downloadUrl = "https://huggingface.co/prism-ml/Bonsai-1.7B-gguf/resolve/main/Bonsai-1.7B.gguf",
+            fileName = "Bonsai-1.7B.gguf",
+            sizeBytes = 1_720_028_160L,
+            downloadedBytes = 0L,
+            architecture = "qwen3",
+            contextLength = 32_768,
+            chatTemplate = null,
+            localPath = null,
+            state = "REMOTE",
+            errorMessage = null,
+            isPreset = true,
+            workId = null,
+        ),
+        ModelRecordEntity(
+            id = "bonsai-4b",
+            displayName = "Bonsai 4B",
+            description = "Balanced quality and memory for newer phones",
+            huggingFaceRepo = "prism-ml/Bonsai-4B-gguf",
+            downloadUrl = "https://huggingface.co/prism-ml/Bonsai-4B-gguf/resolve/main/Bonsai-4B.gguf",
+            fileName = "Bonsai-4B.gguf",
+            sizeBytes = 4_021_784_576L,
+            downloadedBytes = 0L,
+            architecture = "qwen3",
+            contextLength = 32_768,
+            chatTemplate = null,
+            localPath = null,
+            state = "REMOTE",
+            errorMessage = null,
+            isPreset = true,
+            workId = null,
+        ),
+        ModelRecordEntity(
+            id = "bonsai-8b",
+            displayName = "Bonsai 8B",
+            description = "Largest public Bonsai preset. Better responses, higher memory risk.",
+            huggingFaceRepo = "prism-ml/Bonsai-8B-gguf",
+            downloadUrl = "https://huggingface.co/prism-ml/Bonsai-8B-gguf/resolve/main/Bonsai-8B.gguf",
+            fileName = "Bonsai-8B.gguf",
+            sizeBytes = 8_188_548_096L,
+            downloadedBytes = 0L,
+            architecture = "qwen3",
+            contextLength = 65_536,
+            chatTemplate = null,
+            localPath = null,
+            state = "REMOTE",
+            errorMessage = null,
+            isPreset = true,
+            workId = null,
+        ),
+    )
+}
