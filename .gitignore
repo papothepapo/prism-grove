@@ -1,4 +1,11 @@
+# IDE and local machine state
+.gradle/
+.idea/
+local.properties
 
 # Build artifacts
+build/
+app/build/
+runtime/build/
 runtime/.cxx/
 *.a

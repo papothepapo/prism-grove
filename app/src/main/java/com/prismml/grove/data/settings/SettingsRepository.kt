@@ -22,7 +22,7 @@ class SettingsRepository(private val context: Context) {
             topP = prefs[TOP_P] ?: 0.9f,
             contextLength = prefs[CONTEXT_LENGTH] ?: 8192,
             threadCount = prefs[THREAD_COUNT] ?: 0,
-            defaultModelId = prefs[DEFAULT_MODEL_ID]?.takeIf { it.isNotBlank() },
+            defaultModelId = prefs[DEFAULT_MODEL_ID]?.takeIf { it.isNotBlank() } ?: "bonsai-8b",
             keepScreenOnDuringGeneration = prefs[KEEP_SCREEN_ON] ?: true,
             huggingFaceToken = prefs[HF_TOKEN] ?: "",
         )
