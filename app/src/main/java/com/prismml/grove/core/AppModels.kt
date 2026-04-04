@@ -23,7 +23,7 @@ data class AppSettings(
     val topP: Float = 0.9f,
     val contextLength: Int = 8192,
     val threadCount: Int = 0,
-    val defaultModelId: String? = null,
+    val defaultModelId: String? = "bonsai-8b",
     val keepScreenOnDuringGeneration: Boolean = true,
     val huggingFaceToken: String = "",
 )

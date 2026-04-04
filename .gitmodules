@@ -1,0 +1,4 @@
+[submodule "third_party/prism-llama.cpp"]
+	path = third_party/prism-llama.cpp
+	url = https://github.com/PrismML-Eng/llama.cpp.git
+	branch = prism-android

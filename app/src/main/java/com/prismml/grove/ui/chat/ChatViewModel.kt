@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.prismml.grove.core.ChatMessage
 import com.prismml.grove.data.chat.ChatRepository
 import com.prismml.grove.data.chat.ConversationRepository
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -20,6 +21,7 @@ data class ChatUiState(
     val errorMessage: String? = null,
 )
 
+@OptIn(ExperimentalCoroutinesApi::class)
 class ChatViewModel(
     conversationId: Long?,
     private val conversationRepository: ConversationRepository,

@@ -60,6 +60,9 @@ class ModelRepository(
                     downloadUrl = preset.downloadUrl,
                     fileName = preset.fileName,
                     sizeBytes = preset.sizeBytes,
+                    architecture = preset.architecture,
+                    contextLength = preset.contextLength,
+                    chatTemplate = preset.chatTemplate,
                     isPreset = true,
                 ) ?: preset
             }
